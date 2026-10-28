@@ -1,275 +1,306 @@
-# ⌨️ TypeMaster — Professional Typing Learning & Speed Test Platform
+# TypeMaster — Typing Speed & Accuracy Trainer
 
-<p align="center">
-  <img src="public/favicon.svg" alt="TypeMaster Logo" width="80" height="80" />
-</p>
+A modern, interactive typing-learning platform designed to help users improve their typing speed, accuracy, consistency, and keyboard proficiency through structured lessons, timed tests, personalized feedback, and progress tracking.
 
-<p align="center">
-  <strong>Master touch typing, accelerate your WPM, and achieve flawless accuracy with structured courses, live analytics, and gamified mastery.</strong>
-</p>
+## Overview
 
-<p align="center">
-  <a href="https://github.com/Prasanna-1166/Typer-Test/actions"><img src="https://img.shields.io/badge/build-passing-brightgreen?style=flat-square" alt="Build Status" /></a>
-  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.3-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React 19" /></a>
-  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-7.0-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /></a>
-  <a href="https://vite.dev/"><img src="https://img.shields.io/badge/Vite-8.3-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /></a>
-  <a href="https://vitest.dev/"><img src="https://img.shields.io/badge/Vitest-32%20Passed-FCC72B?style=flat-square&logo=vitest&logoColor=black" alt="Vitest" /></a>
-  <a href="https://oxc.rs/"><img src="https://img.shields.io/badge/Linter-Oxlint-orange?style=flat-square" alt="Oxlint" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
-</p>
+TypeMaster provides a structured learning experience for users at different typing skill levels. Whether you are learning to touch-type for the first time or improving your professional typing performance, the platform helps you practice, measure your progress, and identify areas for improvement.
 
----
+The application combines guided learning, real-time typing analytics, performance reports, and gamification in a clean, responsive interface.
 
-## 📌 Table of Contents
+## Features
 
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Curriculum & Learning Paths](#-curriculum--learning-paths)
-- [Tech Stack](#-tech-stack)
-- [Project Architecture](#-project-architecture)
-- [Getting Started](#-getting-started)
-- [Available Scripts](#-available-scripts)
-- [Testing & Quality Assurance](#-testing--quality-assurance)
-- [Privacy & Local Storage](#-privacy--local-storage)
-- [Roadmap & Future Enhancements](#-roadmap--future-enhancements)
-- [Contributing](#-contributing)
-- [License](#-license)
+### Three Learning Levels
 
----
+- **Beginner:** Learn keyboard layout, finger placement, home-row keys, letters, words, and basic sentences.
+- **Intermediate:** Improve speed and accuracy through timed exercises, paragraphs, punctuation, and targeted practice.
+- **Pro:** Develop advanced typing consistency, reduce errors, and practice challenging passages.
 
-## 🚀 Overview
+### Interactive Typing Practice
 
-**TypeMaster** is a modern, responsive, offline-first touch-typing education platform built with **React 19**, **TypeScript**, and **Vite**. Whether you are a beginner learning home row finger positions or a developer sharpening syntax typing speed, TypeMaster provides an end-to-end curriculum, granular real-time feedback, and comprehensive analytics.
+- Real-time typing feedback.
+- Live words-per-minute (WPM) calculation.
+- Accuracy and error tracking.
+- Visual identification of correct and incorrect characters.
+- Timed typing tests and free practice.
+- Restart, pause, and resume controls where supported.
 
-All session data, streaks, and achievements are saved locally using **IndexedDB**, guaranteeing privacy, instantaneous performance, and offline availability with zero cloud dependence.
+### Performance Analytics
 
----
+- Typing-test history.
+- Best and recent WPM.
+- Accuracy and error trends.
+- Lesson completion tracking.
+- Progress reports and visualizations.
+- Personalized practice recommendations based on recorded performance.
 
-## ✨ Key Features
+### Gamification
 
-### 🎓 1. Structured Curriculum (47 Handcrafted Lessons)
-- **3 Progressive Levels**: Beginner, Intermediate, and Advanced tracks.
-- **Micro-Targeted Objectives**: Focused practice on home row, alphabet expansion, capitalizations, numbers, symbols, and programming syntax.
-- **Passing Requirements**: Thresholds for accuracy percentage and minimum WPM to ensure genuine muscle memory before advancing.
+- XP and progression.
+- Achievements and badges.
+- Learning streaks.
+- Course-completion milestones.
+- Certificates for eligible learning levels.
 
-### ⌨️ 2. Interactive Virtual Keyboard & Finger Guide
-- **Dynamic Key Highlighting**: Shows the exact key to press in real time.
-- **Visual Finger Guide**: Color-coded finger zones teaching ergonomic finger-to-key mapping.
-- **Responsive Layout**: Adapts gracefully across desktop and tablet screens.
+### Course Management
 
-### ⚡ 3. Real-Time Typing Engine
-- **Instant Character Feedback**: Color-coded character states for correct, incorrect, and corrected keystrokes.
-- **Live Metrics**: Monotonic timer calculating Gross WPM, Net WPM, accuracy percentage, and mistake distribution on the fly.
-- **Configurable Caret**: Customizable caret styles (`line`, `block`, `underline`) and adjustable font sizes.
+- Organized courses, modules, and lessons.
+- Lesson progression and completion tracking.
+- Local course-content management.
+- Progress export and import where implemented.
 
-### ⏱️ 4. Flexible Typing Tests & Custom Drills
-- **Timed Modes**: Standard 15s, 30s, 60s, and 120s speed tests.
-- **Passage Mode**: Curated literary, historical, and technical excerpts.
-- **Free Practice Mode**: Practice custom text snippets with configurable backspace rules.
+### User Experience
 
-### 📊 5. In-Depth Performance Analytics
-- **Visual Charts (Recharts)**: Interactive graphs tracking WPM progression, accuracy consistency, and speed trends over time.
-- **Weak-Key Heatmap**: Pinpoint problematic characters and frequent typos to target deliberate practice.
-- **Intelligent Recommendations**: Automated guidance recommending lessons or speed drills based on your recent error patterns.
+- Responsive interface for desktop, tablet, and mobile.
+- Consistent, professional visual design.
+- Accessible navigation and interactive controls.
+- Light and dark themes where supported.
+- Local progress storage without mandatory registration.
 
-### 🏆 6. Gamification & Achievements
-- **Level & XP Engine**: Earn experience points for every completed lesson and test.
-- **Daily Streak Tracker**: Stay consistent with practice streak tracking.
-- **21 Unlockable Badges**: Milestone achievements covering speed plateaus, perfect accuracy, lesson milestones, and endurance.
+> **Note:** The exact availability of individual features depends on the implemented version of the application. Consult the current code and release notes for verified functionality.
 
-### 📜 7. Verifiable Certificates
-- Earn completion certificates upon finishing track milestones.
-- Generates beautiful, printable credentials complete with student name, date, track level, verified WPM, and accuracy rating.
+## Technology Stack
 
-### 🛠️ 8. Admin Studio & Data Portability
-- **Custom Lesson Creator**: Create, edit, and organize custom lessons and practice drills.
-- **Full Data Backup**: One-click JSON export and import for seamless migration and backup.
-- **Data Reset**: Reset stats safely at any time.
+The project is designed to use a modern frontend stack. Confirm the exact technologies and versions against the current repository before publishing.
 
----
+| Component | Technology |
+|---|---|
+| Frontend | React |
+| Language | TypeScript |
+| Build tool | Vite |
+| Styling | Tailwind CSS or the existing project styling system |
+| Data persistence | Browser-local storage, such as IndexedDB |
+| Testing | The testing framework configured in the repository |
+| Deployment | Compatible static hosting provider |
 
-## 📚 Curriculum & Learning Paths
-
-| Level | Lessons | Target Focus | Core Skills Learned |
-| :--- | :---: | :--- | :--- |
-| 🟢 **Beginner** | 22 | Foundation & Muscle Memory | Home row keys (`ASDF JKL;`), index reach, top/bottom rows, shift capitalization, basic punctuation. |
-| 🟡 **Intermediate** | 14 | Speed & Rhythm | Number row, frequent symbol combinations, speed bursts, rhythm consistency, error minimization. |
-| 🟣 **Advanced** | 11 | Professional & Code Mastery | Complex literature, programming syntax (`{}`, `[]`, `=>`, `;`), multi-line code drills, final certification test. |
-
----
-
-## 🛠 Tech Stack
-
-| Category | Technology | Description |
-| :--- | :--- | :--- |
-| **Frontend Framework** | [React 19](https://react.dev/) | Latest React features and concurrency optimizations |
-| **Language** | [TypeScript](https://www.typescriptlang.org/) | Strict type-safety across all modules and states |
-| **Bundler & Tooling** | [Vite 8](https://vite.dev/) | Lightning-fast HMR and optimized production bundling |
-| **Routing** | [React Router v7](https://reactrouter.com/) | Declarative client-side routing and page management |
-| **Data Visualization** | [Recharts 3](https://recharts.org/) | Responsive SVG charts for metrics and progression |
-| **Icons** | [Lucide React](https://lucide.dev/) | Clean, accessible SVG iconography |
-| **Client Storage** | [idb](https://github.com/jakearchibald/idb) | Promise-based IndexedDB wrapper for local persistence |
-| **Testing** | [Vitest](https://vitest.dev/) & [Testing Library](https://testing-library.com/) | Unit tests, DOM assertions, and test runners |
-| **Linter** | [Oxlint](https://oxc.rs/) | High-performance Rust-based JavaScript/TypeScript linter |
-
----
-
-## 📂 Project Architecture
-
-```text
-Typer/
-├── public/                 # Static assets & SVG icons
-│   ├── favicon.svg
-│   └── icons.svg
-├── src/
-│   ├── assets/             # Images and design assets
-│   ├── components/         # Reusable UI components
-│   │   ├── Footer.tsx
-│   │   ├── Navigation.tsx
-│   │   ├── ToastContainer.tsx
-│   │   ├── TypingInterface.tsx   # Core character-by-character typing engine
-│   │   └── VirtualKeyboard.tsx   # Interactive visual keyboard & finger guide
-│   ├── context/            # React Context for global state & storage sync
-│   │   └── AppContext.tsx
-│   ├── data/               # Default curriculum & practice passages
-│   │   ├── courseData.ts   # 47 lessons structured across 3 tiers
-│   │   └── passages.ts     # Curated passages for test modes
-│   ├── hooks/              # Custom hooks (e.g. keyboard listeners, sound)
-│   ├── lib/                # Pure business logic & utility modules
-│   │   ├── achievements.ts # Achievement rules engine
-│   │   ├── metrics.ts      # Net/Gross WPM, accuracy, mistake calculations
-│   │   ├── recommendations.ts # Heuristic practice recommendation system
-│   │   └── storage.ts      # IndexedDB repository layer
-│   ├── pages/              # Application views
-│   │   ├── HomePage.tsx
-│   │   ├── DashboardPage.tsx
-│   │   ├── CoursesPage.tsx
-│   │   ├── LevelPage.tsx
-│   │   ├── LessonPage.tsx
-│   │   ├── TestPage.tsx
-│   │   ├── ReportsPage.tsx
-│   │   ├── AchievementsPage.tsx
-│   │   ├── CertificatesPage.tsx
-│   │   ├── SettingsPage.tsx
-│   │   └── AdminPage.tsx
-│   ├── test/               # Comprehensive Vitest test suite
-│   ├── types/              # Domain TypeScript interfaces and types
-│   ├── App.tsx             # Root layout and route configuration
-│   ├── index.css           # Design tokens, variables & responsive styling
-│   └── main.tsx            # Entry point
-├── package.json
-├── tsconfig.json
-└── vite.config.ts
-```
-
----
-
-## ⚡ Getting Started
+## Getting Started
 
 ### Prerequisites
 
-- **Node.js**: `v18.0.0` or higher recommended
-- **npm** (or `pnpm` / `yarn`)
+Install the following tools if they are not already available:
+
+- [Node.js](https://nodejs.org/)
+- npm, which is distributed with Node.js
+- Git
+- A code editor such as [Visual Studio Code](https://code.visualstudio.com/)
+
+Check your installed versions:
+
+```bash
+node --version
+npm --version
+git --version
+```
 
 ### Installation
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Prasanna-1166/Typer-Test.git
-   cd Typer-Test
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Start the local development server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in browser**:
-   Navigate to `http://localhost:5173` to start typing!
-
----
-
-## 📜 Available Scripts
-
-| Command | Purpose |
-| :--- | :--- |
-| `npm run dev` | Launches the Vite local dev server with Hot Module Replacement (HMR). |
-| `npm run build` | Runs typecheck (`tsc -b`) and generates production bundles in `dist/`. |
-| `npm run preview` | Locally previews the production build. |
-| `npm run test` | Runs the full Vitest unit and integration test suite. |
-| `npm run test:watch` | Runs Vitest in interactive watch mode. |
-| `npm run test:ui` | Opens the Vitest graphical web test runner. |
-| `npm run typecheck` | Validates TypeScript types across the entire project without emitting files. |
-| `npm run lint` | Runs Oxlint for ultra-fast static code analysis. |
-
----
-
-## 🧪 Testing & Quality Assurance
-
-TypeMaster is built with robust test coverage across all business logic, metrics calculations, achievement conditions, and UI components:
+Clone the repository:
 
 ```bash
-# Run unit and integration tests
-npm run test
-
-# Run linter
-npm run lint
-
-# Validate TypeScript types
-npm run typecheck
+git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-Unit test suites cover:
-- **`metrics.test.ts`**: Strict Gross WPM, Net WPM, accuracy %, error tracking, and penalty calculations.
-- **`courseData.test.ts`**: Curriculum integrity, module structures, and objective validations.
-- **`achievements.test.ts`**: Condition evaluators for badges, streaks, and personal records.
-- **`recommendations.test.ts`**: Heuristics for detecting weak keys and suggesting next steps.
-- **`components.test.tsx`**: Accessibility and rendering sanity checks.
+Navigate to the project directory:
+
+```bash
+cd YOUR_PROJECT_DIRECTORY
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal, typically:
+
+```text
+http://localhost:5173
+```
+
+The actual port may differ depending on your Vite configuration.
+
+## Available Commands
+
+The following commands are typical for a Vite project. Run only those configured in your repository's `package.json`.
+
+| Command | Purpose |
+|---|---|
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run preview` | Preview the production build locally |
+| `npm run test` | Run tests, if configured |
+| `npm run lint` | Run linting, if configured |
+| `npx tsc --noEmit` | Check TypeScript types when the project configuration supports it |
+
+Always check `package.json` for the actual available scripts.
+
+## How to Use
+
+1. Open the website.
+2. Start with the beginner course or take a typing test to assess your current performance.
+3. Complete the guided exercises and follow the on-screen instructions.
+4. Take timed typing tests to measure speed and accuracy.
+5. Review your results and identify areas that need improvement.
+6. Follow personalized practice recommendations.
+7. Track your progress, unlock achievements, and complete learning levels.
+8. Earn eligible course-completion certificates.
+
+For the best learning experience, prioritize accuracy before gradually increasing typing speed.
+
+## Understanding Typing Metrics
+
+### Words Per Minute (WPM)
+
+WPM estimates typing speed. A common convention treats five typed characters, including spaces, as one standard word.
+
+**Gross WPM:**
+
+```text
+Gross WPM = (Total characters typed / 5) / Time in minutes
+```
+
+Net WPM may additionally account for errors, depending on the application's documented calculation method.
+
+### Accuracy
+
+Accuracy measures the proportion of correctly typed input according to the application's defined rules.
+
+```text
+Accuracy (%) = Correct attempts / Total attempts × 100
+```
+
+The precise handling of corrected mistakes depends on the typing engine's implementation.
+
+### Performance Improvement
+
+Use repeated tests under comparable conditions to assess changes in speed, accuracy, and consistency. A higher WPM is not necessarily better if accuracy drops substantially.
+
+## Data Storage and Privacy
+
+The initial application is designed to work without mandatory user accounts or a backend.
+
+Depending on the implementation:
+
+- Learning progress and typing history are stored locally in the browser.
+- Progress does not automatically synchronize across devices.
+- Clearing browser data may remove saved progress.
+- Export and import can provide manual data portability when implemented.
+- Local data is not equivalent to secure server-side storage.
+- The local course-management dashboard is not a secure, authenticated administrator portal.
+
+Do not enter sensitive personal information into locally stored records.
+
+## Deployment
+
+The application can be deployed to a static hosting provider compatible with its production build.
+
+General deployment workflow:
+
+1. Install the project dependencies.
+2. Run the configured production build.
+3. Verify that the build completes successfully.
+4. Deploy the generated output directory, typically `dist/`.
+5. Configure SPA route fallback behavior if the application uses client-side routing.
+6. Open the deployed website and test the main user journeys.
+
+Potential hosting options include:
+
+- [GitHub Pages](https://pages.github.com/)
+- [Cloudflare Pages](https://pages.cloudflare.com/)
+- [Netlify](https://www.netlify.com/)
+- [Vercel](https://vercel.com/)
+
+Check the hosting provider's current free-plan terms and configure the project appropriately. Some providers require additional configuration for client-side routing or base paths.
+
+## Testing and Quality Assurance
+
+Before releasing a version, verify:
+
+- Typing speed and accuracy calculations.
+- Timer, pause, resume, and restart behavior.
+- Lesson completion and progression.
+- Progress persistence after reloading.
+- Recommendations based on actual test history.
+- Reports and charts using real records.
+- Achievement and certificate eligibility.
+- Course-content editing and data portability.
+- Responsive layouts and keyboard accessibility.
+- Production build and deployed routes.
+
+Document actual test results in release notes rather than assuming that all checks pass.
+
+## Project Structure
+
+The exact structure depends on the implementation. A typical organization might look like this:
+
+```text
+typemaster/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Application pages
+│   ├── courses/         # Course and lesson content
+│   ├── hooks/           # Reusable React hooks
+│   ├── services/        # Persistence and application services
+│   ├── utils/           # Typing calculations and helpers
+│   ├── types/           # TypeScript definitions
+│   ├── App.tsx           # Application entry component
+│   └── main.tsx          # Frontend entry point
+├── tests/                # Tests, if organized separately
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+This is an illustrative structure, not a claim about the exact files in your repository.
+
+## Future Improvements
+
+Potential future enhancements include:
+
+- Optional user accounts and cloud synchronization.
+- Additional language support.
+- More advanced typing exercises.
+- Customizable learning plans.
+- Improved accessibility.
+- Optional public leaderboards backed by a server.
+- Secure administrator authentication and centralized course management.
+- Verifiable certificates.
+- Additional analytics and performance insights.
+
+These are possible extensions, not promises that the features are already implemented.
+
+## Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Implement your changes with appropriate tests.
+4. Run the relevant quality checks.
+5. Submit a pull request describing the changes and verification performed.
+
+Keep changes focused, preserve existing functionality, and avoid introducing unnecessary dependencies.
+
+## License
+
+Choose and add a license before distributing this project publicly.
+
+For example, the MIT License permits broad reuse with attribution, subject to its terms. Add a `LICENSE` file only after deciding which license you want to apply.
+
+## Acknowledgements
+
+Built to make typing practice more accessible, measurable, and engaging through structured lessons and interactive feedback.
 
 ---
 
-## 🔒 Privacy & Local Storage
-
-Your privacy is paramount:
-- **100% Client-Side**: No typing inputs or keystrokes are transmitted over the network.
-- **IndexedDB**: All test history, custom lessons, progress, and settings reside directly in your browser's persistent storage.
-- **Portability**: Export all your data into a JSON file whenever you want to transfer your stats to another browser or device.
-
----
-
-## 🗺️ Roadmap & Future Enhancements
-
-- [ ] Multiplayer real-time typing races via WebSockets / WebRTC.
-- [ ] Custom mechanical keyboard sound profiles (Cherry MX Blue, Brown, Red, Topre).
-- [ ] Code syntax typing modes for Python, Rust, Go, and C++.
-- [ ] Custom themes (Dracula, Nord, Solarized, Cyberpunk).
-- [ ] Multi-language keyboard layouts (AZERTY, QWERTZ, Dvorak, Colemak).
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-<p align="center">
-  Crafted with ❤️ for typists, students, and developers everywhere.
-</p>
+**TypeMaster — Practice smarter. Type faster. Improve continuously.**
